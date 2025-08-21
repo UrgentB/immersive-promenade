@@ -1,5 +1,28 @@
+
 <script setup lang="ts">
-  let place:string = '1. Площадь Милютина'
+  import { ref, computed } from 'vue' 
+
+  //Коллекция путей и их параметров
+  const routesMap = new Map<string, string>();
+  routesMap.set('tutova', 'тутова');
+  routesMap.set('tamova', 'тамого');
+
+  //Хранит текущий адрес
+  const currentPath = ref(window.location.href)
+
+  const hash = computed(() => {
+    return window.location.href.split('/').pop()
+  })
+
+  //Считывает текущий адрес при изменении, но может не понадобится
+  window.addEventListener('hashchange', () => {
+    currentPath.value = window.location.href
+  })
+
+  const currentPlace = computed(() => {
+    return routesMap.get(currentPath.value.split('/').pop() || '/') || 'Нигдемаго'
+  })
+  
 </script>
 
 <template>
@@ -10,7 +33,7 @@
     </div>
   </div>
   <table class="middle-block">
-      <tr><h1>{{ place }}</h1></tr>
+      <tr><h1>{{ currentPlace }}</h1></tr>
       <tr>
         <video :controls="true" src="/oUr70ixCiESIwRwIeHPtVECAIr6JzBqPAQzSAG.mp4">
         </video>
