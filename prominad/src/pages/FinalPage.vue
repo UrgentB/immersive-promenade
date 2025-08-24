@@ -53,13 +53,11 @@ const play = () => {
 </script>
 
 <style scoped>
-/* ------- панель финала ------- */
 .panel {
     display: flex;
     flex-direction: column;
 }
 
-/* твои стили заголовков/текста */
 h1,
 .h1 {
     font-family: Rubik;

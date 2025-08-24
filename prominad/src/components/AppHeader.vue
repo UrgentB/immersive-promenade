@@ -15,9 +15,9 @@ const aboutHref = '/about'
 .app-header{
   display:flex;
   justify-content:space-between;
-  align-items: center;     /* логотип «чуть выше», как на макете */
+  align-items: center;
   gap:16px;
-  height: 58px;      /* визуально как на рис. 2 */
-  background: #FFF8E9;        /* цвет подложки как на скрине */
+  height: 58px;
+  background: #FFF8E9;
 }
 </style>

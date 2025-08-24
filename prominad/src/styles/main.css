@@ -146,8 +146,8 @@ body {
 
 /* Декоративные спирали поверх контента */
 .page-with-spirals {
-  position: relative;           /* ограничиваем наложение шапкой/футером */
-  isolation: isolate;           /* свой стек слоёв */
+  position: relative;
+  isolation: isolate;
 }
 
 .spiral {
@@ -159,11 +159,10 @@ body {
 
 /* Верхняя правая */
 .spiral-tr {
-  top: -0px;                   /* слегка вынос за карточку как на макете */
+  top: -0px;
   right: -18px;
   width: 110px;
 }
-
 /* Нижняя левая */
 .spiral-bl {
   bottom: -0px;
@@ -171,7 +170,6 @@ body {
   width: 110px;
 }
 
-/* На очень узких экранах чуть меньше вылеты */
 @media (max-width: 420px) {
   .spiral-tr { top: -0px; right: -12px; width: 110px; }
   .spiral-bl { bottom: -1px; left: -8px; width: 110px;}
