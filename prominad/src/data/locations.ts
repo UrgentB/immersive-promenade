@@ -3,10 +3,10 @@ export type LocationId =
 | '2-gymnast'
 | '3-soviet-31'
 | '4-soviet-21'
-| '5-some'
-| '6-some'
-| '7-some'
-| '8-some'
+| '5-vinogradov'
+| '6-revol'
+| '7-naber'
+| '8-vermuseum'
 | '9-museum-yard'
 
 
@@ -49,7 +49,7 @@ order: 3,
 title: '3. Советский просп., д. 31',
 wherePrev: 'Арт-объект «Гимнастистка»',
 whereHere: 'Советский просп., д. 31',
-whereNext: 'Советский просп., д. 31',
+whereNext: 'Музей археологии',
 bulletsHere: [
 'Дом Анны Демидовой (Советский просп., д. 31)',
 'Дом Степана Заводчикова (Советский просп., д. 29)',
@@ -62,47 +62,65 @@ cta: { text: 'Узнать больше', to: '/about' }
 '4-soviet-21': {
 id: '4-soviet-21',
 order: 4,
-title: '4. Советский просп., д. 21',
+title: '4. Музей археологии',
 wherePrev: 'Советский просп., д. 31',
-whereHere: 'Советский просп., д. 21',
-whereNext: '—',
+whereHere: 'Музей археологии (Советский просп., 19)',
+whereNext: 'Дом купца Виноградова',
 videoSrc: '/videos/test.mp4'
 },
-'5-some': {
-id: '5-some',
+'5-vinogradov': {
+id: '5-vinogradov',
 order: 5,
-title: '5. Локация',
-wherePrev: '—',
-whereHere: 'Локация 5',
-whereNext: '—',
+title: '5. Дом купца Виноградова',
+wherePrev: 'Музей археологии',
+whereHere: 'Дом купца Виноградова (Советский просп., 1)',
+whereNext: 'Площадь Революции',
 videoSrc: '/videos/5.mp4'
 },
-'6-some': {
-id: '6-some',
+'6-revol': {
+id: '6-revol',
 order: 6,
-title: '6. Локация',
-wherePrev: '—',
-whereHere: 'Локация 6',
-whereNext: '—',
-videoSrc: '/videos/6.mp4'
+title: '6. Площадь Революции',
+wherePrev: 'Дом купца Виноградова',
+whereHere: 'Площадь Революции',
+whereNext: 'Набережная',
+videoSrc: '/videos/6.mp4',
+bulletsHere: [
+	'Памятник братьям Верещагиным',
+	'Дом И.А. Милютина (пл. Революции, 1)',
+	'Булыжная мостовая (Памятник Афанасию и Феодосию)',
+	'Воскресенский собор (Соборная горка, 1)'
+],
 },
-'7-some': {
-id: '7-some',
+'7-naber': {
+id: '7-naber',
 order: 7,
-title: '7. Локация',
-wherePrev: '—',
-whereHere: 'Локация 7',
-whereNext: '—',
-videoSrc: '/videos/7.mp4'
+title: '7. Набережная',
+wherePrev: 'Площадь Революции',
+whereHere: 'Набережная',
+whereNext: 'Музей Верещагиных',
+videoSrc: '/videos/7.mp4',
+bulletsHere: [
+	'Арт-объект "Городовой" (Александровская наб.)',
+	'Стрелка рек Шексны и Ягорбы (Александровская наб.)',
+	'Арт-объект "Речные рыбы-флюгеры" (Александровская наб.)',
+	'Фигуры из кортена (Университетская наб.)'
+],
 },
-'8-some': {
-id: '8-some',
+'8-vermuseum': {
+id: '8-vermuseum',
 order: 8,
-title: '8. Локация',
-wherePrev: '—',
-whereHere: 'Локация 8',
-whereNext: '—',
-videoSrc: '/videos/8.mp4'
+title: '8. Музей Верещагиных',
+wherePrev: 'Набережная',
+whereHere: 'Музей Верещагиных',
+whereNext: 'Музейный дворик',
+videoSrc: '/videos/8.mp4',
+bulletsHere: [
+	'Мемориальный дом-музей Верещагиных (ул. Социалистическая, 22)',
+	'Дворик Дом-музея Верещагиных',
+	'Деревянный тротуар',
+	'Перекрёсток ул. Коммунистов и Советского просп.'
+],
 },
 '9-museum-yard': {
 id: '9-museum-yard',
