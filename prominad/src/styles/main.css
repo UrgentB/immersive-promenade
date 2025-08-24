@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+:root {
+    --bg: #FFFFFF;
+    /* фон страниц */
+    --green: #A2D480;
+    /* основной зелёный карточек */
+    --accent: #FDB24A;
+    /* оранжевые линии/кнопки */
+    --text: #144220;
+    /* тёмный текст */
+    --light-text: #FDFAE7;
+    /* светлый текст */
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body,
+#app {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    font-family: 'Rubik', sans-serif;
+    color: var(--text)
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 16px
+}
+
+.card {
+    background: #A2D480;
+    padding: 20px;
+    border-radius: 20px
+}
+
+.card-inner {
+    background: #FFF8E9;
+    padding: 16px;
+    border-radius: 12px
+}
+
+.h1 {
+    font-family: Rubik;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 17px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+    color: var(--light-text);
+}
+
+.h2 {
+    font-weight: 800;
+    font-size: 28px;
+    margin: 16px 0;
+    color: var(--light-text);
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 1.5
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--light-text);
+    font-weight: 800;
+    text-decoration: none;
+    border: none
+}
+
+.btn:active {
+    transform: translateY(1px)
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    opacity: .9
+}
+
+.mascot {
+    width: 160px;
+    height: auto
+}
+
+.video-shell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16/9;
+    background: #FFF8E9;
+    border-radius: 12px
+}
+
+.play {
+    width: 92px;
+    height: 92px;
+    background: var(--green);
+    border-radius: 999px;
+    display: grid;
+    place-items: center
+}
+
+.play:after {
+    content: "";
+    border-style: solid;
+    border-width: 12px 0 12px 18px;
+    border-color: transparent transparent transparent #fff;
+    margin-left: 4px
+}
+
+.timeline {
+    border-left: 4px solid #7DBB5A;
+    padding-left: 14px;
+    margin: 14px 0
+}
+
+.timeline .dot {
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    background: #fff;
+    display: inline-grid;
+    place-items: center;
+    border: 2px solid #7DBB5A;
+    margin-right: 8px
+}
+
+/* Декоративные спирали поверх контента */
+.page-with-spirals {
+  position: relative;           /* ограничиваем наложение шапкой/футером */
+  isolation: isolate;           /* свой стек слоёв */
+}
+
+.spiral {
+  position: absolute;
+  z-index: 5;                   /* выше карточек/текста */
+  pointer-events: none;         /* не мешает кликам по видео и кнопкам */
+  opacity: 1;
+}
+
+/* Верхняя правая */
+.spiral-tr {
+  top: -0px;                   /* слегка вынос за карточку как на макете */
+  right: -18px;
+  width: 110px;
+}
+
+/* Нижняя левая */
+.spiral-bl {
+  bottom: -0px;
+  left: -12px;
+  width: 110px;
+}
+
+/* На очень узких экранах чуть меньше вылеты */
+@media (max-width: 420px) {
+  .spiral-tr { top: -0px; right: -12px; width: 110px; }
+  .spiral-bl { bottom: -1px; left: -8px; width: 110px;}
+}
