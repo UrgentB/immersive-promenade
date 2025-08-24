@@ -5,7 +5,7 @@
 
     <!-- Видео -->
     <div class="card-inner video-shell" @click="play">
-      <video ref="video" :src="videoSrc" preload="metadata" playsinline controlslist="nodownload noplaybackrate"
+      <video :controls="true" ref="video" :src="videoSrc" preload="metadata" playsinline controlslist="nodownload noplaybackrate"
         style="width:100%;height:100%;display:none;border-radius:12px"></video>
       <div v-show="!started" class="play"></div>
     </div>

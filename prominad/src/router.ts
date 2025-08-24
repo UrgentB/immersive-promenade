@@ -14,7 +14,7 @@ const routes: RouteRecordRaw[] = [
 
 
 export const router = createRouter({
-history: createWebHistory(),
+history: createWebHistory('/'),
 routes,
 // при открытии по QR сразу наверх
 scrollBehavior: () => ({ top: 0 })

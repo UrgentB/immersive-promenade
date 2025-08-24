@@ -66,7 +66,7 @@ title: '4. Советский просп., д. 21',
 wherePrev: 'Советский просп., д. 31',
 whereHere: 'Советский просп., д. 21',
 whereNext: '—',
-videoSrc: '/videos/4.mp4'
+videoSrc: '/videos/test.mp4'
 },
 '5-some': {
 id: '5-some',
