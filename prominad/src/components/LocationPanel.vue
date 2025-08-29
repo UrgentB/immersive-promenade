@@ -125,7 +125,7 @@ const play = () => {
   left: 16px;
   top: 0;
   bottom: 0;
-  width: 2px;
+  width: 4px;
   background: #fff;
 }
 
@@ -139,8 +139,7 @@ const play = () => {
 .dot {
   width: 32px;
   height: 32px;
-  border-radius: 999px;
-  border: 2px solid #7DBB5A;
+
   background: #fff;
   color: #143016;
   display: grid;
@@ -156,7 +155,6 @@ const play = () => {
 
 .dot.pin {
   background: #7DBB5A;
-  border-color: #7DBB5A;
   color: #fff;
 }
 
