@@ -27,7 +27,7 @@
       <!-- Я здесь -->
       <div class="row">
         <div class="dot pin">
-          <svg viewBox="0 0 24 24" width="16" height="16">
+          <svg viewBox="0 0 25 25" width="25" height="25">
             <path
               d="M12 2c-3.314 0-6 2.686-6 6 0 4.5 6 12 6 12s6-7.5 6-12c0-3.314-2.686-6-6-6zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
               fill="currentColor" />
@@ -79,6 +79,8 @@ const play = () => {
 </script>
 
 <style scoped>
+
+
 .panel {
   display: grid;
   gap: 16px;
@@ -112,50 +114,56 @@ const play = () => {
 }
 
 /* ===== таймлайн ===== */
-.timeline {
+.timeline{
+  /* настраиваемые переменные */
+  --pad-left: 0px;   /* твой отступ под колонку с точками */
+  --col: 38px;        /* ширина колонки с точками */
+  --dot: 38px;        /* диаметр кружка */
+  --rail-w: 4px;      /* толщина линии */
+
   position: relative;
   display: grid;
   row-gap: 14px;
-  padding-left: 48px;
-  /* место под кружок + текст */
+  padding-left: var(--pad-left);
 }
 
-.rail {
+.rail{
   position: absolute;
-  left: 16px;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: #fff;
+  /* центр линии = pad-left + col/2; сдвигаем влево на половину толщины */
+  left: calc(var(--pad-left) + var(--col)/2 - var(--rail-w)/2);
+  top: calc(var(--dot) / 2);      /* не лезем выше первого кружка */
+  bottom: calc(var(--dot) / 2);   /* и ниже последнего */
+  width: var(--rail-w);
+  background: var(--light-text);
+  border-radius:2px;
 }
 
-.row {
+.row{
   display: grid;
-  grid-template-columns: 32px 1fr;
+  grid-template-columns: var(--col) 1fr;
   column-gap: 16px;
   align-items: start;
 }
 
-.dot {
-  width: 32px;
-  height: 32px;
-
-  background: #fff;
-  color: #143016;
+.dot{
+  width: var(--dot);
+  height: var(--dot);
+  border-radius: 50%;
+  background: var(--light-text);
+  color: var(--text);
   display: grid;
   place-items: center;
   font-weight: 800;
-  z-index: 1;
+  z-index: 1; /* чтобы лежало поверх линии */
 }
 
 .dot.num {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1;
 }
 
 .dot.pin {
-  background: #7DBB5A;
-  color: #fff;
+  color: var(--text);
 }
 
 .txt .label {
