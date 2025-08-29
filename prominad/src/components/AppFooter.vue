@@ -4,7 +4,7 @@
             <div class="footer-text">Мы на связи с Вами</div>
             <a href="tel:+78202738236" class="number">+7 (8202) 73-82-36</a>
         </div>
-        <a href="https://vk.com" target="_blank" rel="noopener">
+        <a href="https://vk.com/fedorfromcherepovets" target="_blank" rel="noopener">
             <img src="/images/vk.svg" alt="VK" height="32" />
         </a>
     </footer>

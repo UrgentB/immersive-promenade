@@ -2,7 +2,7 @@ export type LocationId =
 | '1-milyutina'
 | '2-gymnast'
 | '3-soviet-31'
-| '4-soviet-21'
+| '4-archaeology'
 | '5-vinogradov'
 | '6-revol'
 | '7-naber'
@@ -29,7 +29,7 @@ id: '1-milyutina',
 order: 1,
 title: '1. Площадь Милютина',
 whereHere: 'Площадь Милютина',
-whereNext: 'Арт-объект «Гимнастистка»',
+whereNext: 'Арт-объект «Гимназистка»',
 videoSrc: '/videos/1.mp4',
 cta: { text: 'Узнать больше', to: '/about' }
 },
@@ -38,7 +38,7 @@ id: '2-gymnast',
 order: 2,
 title: '2. Арт-объект «Гимназистка»',
 wherePrev: 'Площадь Милютина',
-whereHere: 'Арт-объект «Гимнастистка»',
+whereHere: 'Арт-объект «Гимназистка»',
 whereNext: 'Советский просп., д. 31',
 videoSrc: '/videos/2.mp4',
 cta: { text: 'Узнать больше', to: '/about' }
@@ -47,7 +47,7 @@ cta: { text: 'Узнать больше', to: '/about' }
 id: '3-soviet-31',
 order: 3,
 title: '3. Советский просп., д. 31',
-wherePrev: 'Арт-объект «Гимнастистка»',
+wherePrev: 'Арт-объект «Гимназистка»',
 whereHere: 'Советский просп., д. 31',
 whereNext: 'Музей археологии',
 bulletsHere: [
@@ -59,14 +59,15 @@ bulletsHere: [
 videoSrc: '/videos/3.mp4',
 cta: { text: 'Узнать больше', to: '/about' }
 },
-'4-soviet-21': {
-id: '4-soviet-21',
+'4-archaeology': {
+id: '4-archaeology',
 order: 4,
 title: '4. Музей археологии',
 wherePrev: 'Советский просп., д. 31',
 whereHere: 'Музей археологии (Советский просп., 19)',
 whereNext: 'Дом купца Виноградова',
-videoSrc: '/videos/test.mp4'
+videoSrc: '/videos/test.mp4',
+cta: { text: 'Узнать больше', to: '/about' }
 },
 '5-vinogradov': {
 id: '5-vinogradov',
@@ -75,7 +76,8 @@ title: '5. Дом купца Виноградова',
 wherePrev: 'Музей археологии',
 whereHere: 'Дом купца Виноградова (Советский просп., 1)',
 whereNext: 'Площадь Революции',
-videoSrc: '/videos/5.mp4'
+videoSrc: '/videos/5.mp4',
+cta: { text: 'Узнать больше', to: '/about' }
 },
 '6-revol': {
 id: '6-revol',
@@ -85,6 +87,7 @@ wherePrev: 'Дом купца Виноградова',
 whereHere: 'Площадь Революции',
 whereNext: 'Набережная',
 videoSrc: '/videos/6.mp4',
+cta: { text: 'Узнать больше', to: '/about' },
 bulletsHere: [
 	'Памятник братьям Верещагиным',
 	'Дом И.А. Милютина (пл. Революции, 1)',
@@ -100,6 +103,7 @@ wherePrev: 'Площадь Революции',
 whereHere: 'Набережная',
 whereNext: 'Музей Верещагиных',
 videoSrc: '/videos/7.mp4',
+cta: { text: 'Узнать больше', to: '/about' },
 bulletsHere: [
 	'Арт-объект "Городовой" (Александровская наб.)',
 	'Стрелка рек Шексны и Ягорбы (Александровская наб.)',
@@ -115,9 +119,10 @@ wherePrev: 'Набережная',
 whereHere: 'Музей Верещагиных',
 whereNext: 'Музейный дворик',
 videoSrc: '/videos/8.mp4',
+cta: { text: 'Узнать больше', to: '/about' },
 bulletsHere: [
 	'Мемориальный дом-музей Верещагиных (ул. Социалистическая, 22)',
-	'Дворик Дом-музея Верещагиных',
+	'Дворик Дома-музея Верещагиных',
 	'Деревянный тротуар',
 	'Перекрёсток ул. Коммунистов и Советского просп.'
 ],
@@ -128,7 +133,8 @@ order: 9,
 title: '9. Музейный дворик',
 wherePrev: 'Музей Верещагиных',
 whereHere: 'Музейный дворик',
-videoSrc: '/videos/9.mp4'
+videoSrc: '/videos/9.mp4',
+cta: { text: 'Узнать больше', to: '/about' }
 }
 }
 
